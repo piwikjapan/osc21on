@@ -1,0 +1,4 @@
+.. revealjs_section::
+   :data-background-image: _images/footer20210201w.png
+   :data-background-position: bottom 10px left 0px
+   :data-background-size: 100%

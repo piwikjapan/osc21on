@@ -1,0 +1,607 @@
+.. include:: special.rst
+
+.. Substitution という
+.. |html_break| raw:: html
+
+   <br />
+
+.. |html_hr| raw:: html
+
+   <hr />
+
+==============================================================================================
+情報セキュリティ国際資格 CISSP の勉強方法 |html_break| 及びセキュリティの e ラーニングのご紹介
+==============================================================================================
+
+.. include:: bgw.rst
+
+|
+|
+|
+| サイバープロテック顧問
+| YAMAMOTO Takashi （CISSP, 情報処理安全確保支援士）
+|
+| OSC Spring, March/7/2021
+|
+|
+| chrome に拡張機能 `Ignore X-Frame headers <https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe>`_ をいれて閲覧してください
+
+.. figure:: images/footer20210201.png
+   :scale: 0
+   :align: center
+
+.. figure:: images/footer20210201w.png
+   :scale: 0
+   :align: center
+
+ご協力のお願い
+==============
+
+* zoom 聴講者はチャットか Q&A でリアクションして頂けるとありがたいです
+
+  * リアクションないとものひとりごといっているような感覚に陥ります
+  * 他のセッションでも同じなのでよろしくおねがいします
+* youtube のかたは twitter ハッシュタグ :red:`#osc21on`
+
+  * zoom より 30 秒程度遅れます
+
+あんた誰よ ?
+============
+
+* 株式会社サイバープロテック顧問
+* CISSP 2020/1 取得、情報処理安全確保支援士
+* matomo (Piwik) Japan --- 自サーバーに導入できる web アクセス解析プラットフォーム
+
+.. raw:: html
+
+   <iframe src="https://matomo.jp/" height="470px" width="100%"></iframe>
+
+
+株式会社サイバープロテック
+--------------------------
+
+* サイバーセキュリティの e ラーニング研修専門アカデミー
+
+  * | 代表取締役 岩下廣美
+    | （公認会計士、米国公認会計士、システム監査技術者、CISA、CISM、CISSP）
+
+.. raw:: html
+
+   <iframe src="https://cyberprotec.jp/" height="470px" width="100%"></iframe>
+
+おしながき
+----------
+
+* 14:00 - 14:30 情報セキュリティ国際資格 CISSP の勉強方法
+* 14:30 - 14:45 株式会社サイバープロテックのご紹介
+
+  * サイバーセキュリティの e ラーニング研修専門アカデミー
+  * 講師募集中です
+
+CISSP とは --- 実施団体
+=======================
+* CISSP（Certified Information Systems Security Professional） 認定資格とは、 (ISC)² が認定を行っている国際情報セキュリティ・プロフェッショナル資格です
+  
+  * (ISC)² （International Information Systems Security Certification Consortium: アイエスシー・スクエアー）   拠点フロリダの国際民間非営利団体
+
+.. raw:: html
+
+   <iframe src="https://japan.isc2.org/" height="425px" width="100%"></iframe>
+   
+CISSP とは --- 地域
+-------------------
+
+* 情報処理安全確保支援士が通用するのは日本国内だけです
+
+  * :red:`だからといって支援士を否定するわけではないです。` お間違いなく
+
+* 自衛官が取得
+
+  * 兵器はコンピューターだし、第五の戦場は --- サイバー空間
+  * | だって、わたしが決めたんだもん
+    | 陸上自衛隊システム防護隊 伊東 寛 初代隊長
+
+.. figure:: images/ito.jpg
+   :height: 200px
+   :align: center
+   :class: no-scaled-link
+
+CISSP とは --- 求められる領域
+-----------------------------
+* 便利かつセキュアなコンピューターの利用
+
+  * コンピューターは道具です
+  * 道具の使用をセキュリティのために制限しないように努めます
+  * セキュリティのためなんでもかんでも NG にする考えが NG
+
+* マネージメント層向けです
+
+  * | 支援士のように枝葉末節は問われません
+    | :red:`だからといって支援士を否定するわけではないです`: 再掲
+
+CISSP とは --- 資格別収入比較
+-----------------------------
+
+.. figure:: images/top15.jpg
+   :height: 550px
+   :align: center
+   :class: no-scaled-link
+
+| GLOBAL KNOWLEDGE 15 TOP-PAYING IT CERTIFICATIONS FOR 2020
+
+CISSP とは --- NARIC の見解
+---------------------------
+
+* | (ISC)² @ISC2_Japan （twitter 2020/5/13）
+  | イギリスの国家機関であるNARIC（National Academic Recognition Information Centre）は、CISSPが修士号と同等の価値があると発表しました。
+
+  .. raw:: html
+
+   <iframe src="https://twitter.com/ISC2_Japan/status/1260495208917147649" height="450px" width="100%"></iframe>
+
+
+CISSP とは --- 厳密に言葉の定義を行います
+-----------------------------------------
+
+* | Policy: :red:`従わないとならない。` 短い文。
+  | 例: 当社のセクシャルハラスメントポリシー
+* | Procedures: :red:`従わないとならない。` 様々なタスクの実行方法を具体的に指示。
+  | pascal 言語は procedure ですよね
+* | Standards: :red:`従わないとならない。` 具体的な仕様。
+  | 例: 当社で使用するノートパソコンには norton untivirus をインストールすること。
+* | Baselines: :red:`自分の判断で使う。` Standard の根拠となる統一基準。
+  | 例: Group Policy in Windows
+* | Guidelines: :red:`自分の判断で使う。` アドバイス集。
+  | 例: サイバーセキュリティ経営ガイドライン
+
+CISSP とは --- 取得者数
+-----------------------
+
+.. figure:: images/howmenycissp.png
+   :height: 550px
+   :align: center
+   :class: no-scaled-link
+
+
+試験範囲
+========
+
+| CISSP CBK（Common Body of Knowledge: セキュリティ共通知識分野）
+
+.. raw:: html
+
+   <iframe src="https://japan.isc2.org/cissp_gaiyou.html" height="450px" width="100%"></iframe>
+
+* とにかく範囲が広いです
+* 2019 年 5 月、さらに cloud 関連セキュリティが追加される
+  
+試験内容
+--------
+
+* 699 米ドル + 消費税、約 85,000 円
+* 4 択が 250 問、6 時間
+* 日本語選択時は原文（英語）を参照可能
+
+* 新宿か梅田でいつでも受験可能、Pearson VUE のサイトで予約
+
+.. raw:: html
+
+   <iframe src="https://www.pearsonvue.co.jp/" height="400px" width="100%"></iframe>
+
+日本語? 英語?
+=============
+
+* もともとの試験が英語なので英語で勉強しましょう
+
+  * ただ、（私の場合）恐ろしく時間かかりました
+  * google 先生に電子辞書、DeepL なんでも使いましょう
+  * 英語だと safari が使える＝教材が多量かつ安い → 後ほど
+
+* 日本語でも受験できますが、英文の訳です
+  
+  * 試験はどの言語であれ、原文の英語を参照できます
+  * 英語では単語の意味を厳密に定義したうえで問題が構築されている
+  * 日本語だと試験問題の訳がたまにぶれてます
+    
+    * Authentication と Authorization が日本語だと両方 :red:`認証`
+    * third party が :red:`サードパーティ、関連会社だったり`
+    * ぶれにあたったときは英文参照が必須となります
+  * 日本語でもぶれないように努力はされているそうです...
+
+CBK（Common Body of Knowledge） 本
+==================================
+
+| CISSP CBK（Common Body of Knowledge: セキュリティ共通知識分野）
+| をどう独習してきましょうかというお話
+
+.. raw:: html
+
+   <iframe src="https://japan.isc2.org/cissp_gaiyou.html" height="500px" width="100%"></iframe>
+
+Conrad 本
+---------
+  
+* 読み込めば 60-70% くらい問題の正解を選べるようになります
+* cloud 関連の記述はありませんが、公式問題集二版で十分 → 後ほど
+* :red:`safari に入った!` → 後ほど
+
+.. raw:: html
+
+   <iframe src="https://www.amazon.co.jp/CISSP-Study-Guide-Third-Conrad/dp/0128024372" height="450px" width="100%"></iframe>
+  
+  
+CBK 公式本
+----------
+    
+* (ISC) :sup:`2` CISSP Official Study Guide, 8th Edition
+
+  * 英語だったら safari にある
+  * 日本語版 2019/7 に出版。現在、紙は中古のみ、kindle はあるが :red:`高杉`
+  * 辞書がわりにつかう。全部読むとか無茶しないこと
+  * 紙はやめといたほうがいいんじゃないでしょうか
+
+.. raw:: html
+
+   <iframe src="https://www.amazon.co.jp/%E6%96%B0%E7%89%88-CISSP-CBK%E5%85%AC%E5%BC%8F%E3%82%AC%E3%82%A4%E3%83%89%E3%83%96%E3%83%83%E3%82%AF-%E3%82%A2%E3%83%80%E3%83%A0%E3%83%BB%E3%82%B4%E3%83%BC%E3%83%89%E3%83%B3/dp/475710376X/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=cissp+%E6%97%A5%E6%9C%AC%E8%AA%9E&qid=1567339533&s=books&sr=1-1" height="370px" width="100%"></iframe>
+
+問題集
+======
+
+| CISSP CBK（Common Body of Knowledge: セキュリティ共通知識分野）
+| の想定問題集（受験後、問題そのものを公開するのは禁止）
+
+.. raw:: html
+
+   <iframe src="https://japan.isc2.org/cissp_gaiyou.html" height="500px" width="100%"></iframe>
+
+
+OFFICEAL PRACTICE TESTS 公式問題集（英語）
+------------------------------------------
+
+* CISSP OFFICIAL PRACTICE TESTS 第一版、第二版（両方とも safari にあり）
+
+  * 公式問題集はこれだけなので、大事につかいましょう
+
+    * 仕上がりを見るために使う
+  * CBK に 2019 年 5 月に追加された cloud 関連は第二版で十分 → 第一版にはない
+
+    * 第一版とあわせて見ておいてもよいでしょう
+  * 第二版は CBT （Computer Based Training） あり → 後ほど
+
+.. raw:: html
+           
+   <iframe src="https://www.wiley.com/en-jp/CISSP+Official+%28ISC%292+Practice+Tests%2C+2nd+Edition-p-9781119475965" height="310px" width="100%"></iframe>
+
+    
+OFFICEAL PRACTICE TESTS 公式問題集（日本語）
+--------------------------------------------
+
+* CISSP OFFICIAL PRACTICE TESTS 第二版日本語
+
+.. figure:: images/oguma.png
+   :scale: 100
+   :align: right 
+
+| 小熊 慶一郎さん: (ISC)² 日本代表
+| 【電子書籍のみ】CISSP 公式問題集
+| Kindle、honto、ヨドバシだったら 20% ポイント還元
+
+.. raw:: html
+           
+   <iframe src="https://www.nikkei.com/article/DGXLRSP512880_V20C19A6000000/" height="400px" width="100%"></iframe>
+
+非公式問題集 CISSP Practice Questions Exam Cram 第 4 版
+---------------------------------------------------------
+
+* 出版社はピアソン（試験予約サイトね）
+* がんがん解く。知らない単語は調べあげる
+* 暗号方式についてこれでもかと出題アリ
+* `第 5 版 <https://www.amazon.co.jp/CISSP-Exam-Cram-Michael-Gregg/dp/0789760207>`_ は amazon で検索できるもののいまだ刊行されず → 第 4 版は cloud 関連がない
+
+.. raw:: html
+           
+   <iframe src=" https://www.amazon.co.jp/CISSP-Practice-Questions-Exam-Cram-ebook/dp/B01HF7BE78/ref=sr_1_1?__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&keywords=CISSP+exam&qid=1567339607&s=english-books&sr=1-1" height="400px" width="100%"></iframe>
+
+
+非公式問題集 CISSP Practice Exams, Fifth Edition
+------------------------------------------------
+
+* 工学系であればおなじみの McGraw-Hill、少し古いけど日本語訳あり
+* 公式問題集と比べ斜め上から考えさせるいい問題集だと思う
+* Shon Harris (March 27, 1968 – October 8, 2014) 
+
+  * 残念、共同著者のひとり Shon Harris さんは亡くなっています
+* CBT あり → 後ほど
+
+.. raw:: html
+           
+   <iframe src="https://www.amazon.co.jp/CISSP-Practice-Exams-Fifth-Harris/dp/1260142671" height="350px" width="100%"></iframe>
+
+CBT （Computer Based Training）
+===============================
+
+| Web ベースの問題集です
+| サイトによりけりですけど、今日何問解いたのか、正答率など統計をとってくれます
+| もはや kindle でもだるいです
+
+CCCure
+------
+
+* 1 年で 200 米ドルだったと思う
+
+  * いろいろあるけど CISSP 関連は 1500 問ほど
+* 問題を作りたい人が投稿できるサイトです
+* パクり、解答が怪しいのも散見、だが domain 4 はどれよりも最強
+
+  * 怪しい問題を調べまくるのもまたよし、力はつく
+
+.. raw:: html
+           
+   <iframe src="https://www.cccure.education/home" height="360px" width="100%"></iframe>
+
+SYBEX (ISC)² CISSP Official Practice Tests, 2nd Edition
+-------------------------------------------------------
+
+*  CISSP Official Practice Tests :red:`第ニ版` に書いてあります
+
+   * 下でお見せしている web サイト URL が書いてあるだけですが...
+   * CISSP Official Practice Tests :red:`第ニ版` を持っているかの質問がありますので、答えてください
+   * 公式問題集は仕上がりを見るために使いましょう
+
+.. raw:: html
+           
+   <iframe src="https://www.wiley.com/go/sybextestprep" height="360px" width="100%"></iframe>
+
+McGrawHill Education
+--------------------
+
+* CISSP Practice Exams, Fifth Edition の Appendix の CBT 解説をみてください
+
+  * はやく気づけばよかった
+* コピペができないのでプラグインで解除します（下記は Firefox の場合）
+
+  * `Absolute Enable Right Click & Copy <https://addons.mozilla.org/ja/firefox/addon/absolute-enable-right-click/>`_ (Firefox)
+
+.. raw:: html
+           
+   <iframe src="https://hub.totalsem.com/content/4975" height="400px" width="100%"></iframe>
+    
+Boson Kit for (ISC)² CISSP
+--------------------------
+
+* USD $189 
+* Boson さん、相当自身があるみたい。大激論 → `Reddit.com CCCure or Boson? <https://www.reddit.com/r/cissp/comments/8giocu/cccure_or_boson/>`_
+
+  * | 3 年毎に CISSP を失効させて、試験を受けてる...
+    | I lapsed CEUs - on purpose. I know I'm going to have to take the exam every three years, so I have no need to keep track of CEUs. * CEUs; Continuing Education Units （CPE: Continuing Professional Education と同等）
+  * CCCure に金払ったので使ってはないです... でもよさそうです
+
+.. raw:: html
+           
+   <iframe src="https://www.boson.com/certification-kit/kit-isc2-cissp?r=1" height="270px" width="100%"></iframe>
+
+
+  
+「下手ほど筆を選べ」
+====================
+
+| いい道具があればはかどります
+
+O'Reilly Safari Books Online
+----------------------------
+
+* 全部あります
+
+  * (ISC)² CISSP Official Study Guide, 8th Edition
+  * CISSP Official (ISC)² Practice Tests 第一版、第二版
+  * CISSP Study Guide, 3rd Edition (Conrad)
+  * CISSP Practice Questions Exam Cram 第 4 版 （ピアソン）
+  * CISSP Practice Exams, Fifth Edition, 5th Edition (McGraw-Hill)
+* メールアドレスは必要なものの認証プロセスなし、 :red:`10 日間即試用開始`
+
+.. raw:: html
+           
+   <iframe src="https://qiita.com/wildmouse/items/51416c27ee27e4d566dd" height="270px" width="100%"></iframe>
+
+kindle
+------
+
+* 紙は重たいの持って歩けないし、辞書と連動しているので必須
+* 残念なことに付属辞書は複数語が超貧弱なので英次郎から Kindle 用辞書を作製
+
+  * `Kindleで使える英和辞典を英辞郎から作成してみる <http://umetake.d.dooo.jp/kindle/make_dic.html>`_
+
+    * ただ、辞書サイズ縮小化が目的となってしまいデータを削り複数語の検索ができないようにしている
+    * 複数語こそ英次郎の持ち味なので縮小化しないように改造が必要
+    * 少し古い英次郎が必要なのでヤフオクで
+      
+calibre - E-book management
+---------------------------------
+
+* kindle で読めるようデータをつくる
+
+  * 電子書籍からまるごとコピペして google 翻訳にかけるのに重宝
+  * safari から LibreOffice に貼り付け → calibre で emobi 化 → kindle へ転送
+
+.. raw:: html
+           
+   <iframe src=" https://forest.watch.impress.co.jp/library/software/calibre/" height="450px" width="100%"></iframe>
+    
+カード学習ソフト Quizlet
+------------------------
+
+* 調べた単語は英単語記憶のように全てつっこみます
+
+  * 単語帳作るだけで結構覚えられるので CISSP の勉強 = 単語帳をつくるでいいんじゃないかと
+* CCCure のわからない単語を徹底的に検索し単語帳へ
+* スマホと連動できるので、通勤中単語の復習が可能
+
+.. raw:: html
+           
+   <iframe src="https://quizlet.com/jp/253726744/domain-1-security-and-risk-management-16-flash-cards/" height="370px" width="100%"></iframe>
+
+Quizlet CISSP 単語集
+--------------------
+
+| 情報源のリンクもあるので、後追いするだけでおけー
+| 1600 語、一年半くらいかかってます
+
+.. raw:: html
+
+   <iframe src="https://qiita.com/selfnavi/items/fc81f2950c6eb21807fd/" height="530px" width="100%"></iframe>
+
+
+取り組み方（1）
+===============
+
+#. Conrad 本を一度読みます
+#. CISSP Practice Questions Exam Cram 第 4 版を解いていきます
+
+   * わからない（あやふやな）単語、略語は今一度解答前に調べます
+
+     * 調べた結果は単語集としてまとめます
+     * いい図面、PowerPoint は紙でコピーして手元におきます
+   * 通勤中は Conrad 本二周目に入ります
+
+#. CCCure を解きます
+
+   * ここでも解答前に調べてよし
+
+取り組み方（2）
+---------------
+
+4. CISSP OFFICIAL PRACTICE TESTS 第二版 で Practice Tests :red:`（全ドメインのガチ想定問題）` を :red:`除いたドメイン毎` のテストを解きます
+
+   * ここでも解答前に調べていいですが、それでもどこのドメインが弱いか得点にあらわれます
+   * 弱いドメインのどの単語を覚えていないか控えておきます
+   * 解答前に調べても 8 割程度しか正解しないときは公式問題集以外で再勉強です
+   * :red:`貴重な公式問題集を消費しない`
+5. 弱い単語を覚え、弱いドメインは Conrad 本（3 周目）で復習
+
+取り組み方（3）
+---------------
+
+6. CISSP OFFICIAL PRACTICE TESTS 第二版 :red:`Practice Tests` を解きます
+
+   * 解答前に調べてもいいですが、正答率 9 割を目指します
+     
+     * すこし解いて 9 割でなければ、弱いドメインの復習
+     * Practice Tests は約 250 問
+     * :red:`貴重な公式問題を消費しない`
+   * 弱い単語の復習に専念します
+
+7. 6. の進捗をみつつ試験会場の予約をします
+
+   * 仕上がりが芳しくなければ試験日をリスケ
+   * 6 時間 250 問なので解答時間はあまり気にしなくてもいいです
+
+     * セキュリティスペシャリストの午後 1 の基地外ぶりと比べると...
+
+試験当日 --- 持っていくもの
+===========================
+
+* 運転免許証と図書館のカード
+
+  * アメリカ基準（たぶん）で公的に発行したと認められるもの
+  * 一つは写真入り
+* :red:`食料` 、水
+
+  * 弁当も可能だが、ロッカーが狭いことも想定しましょう
+
+試験当日 --- 試験中
+-------------------
+
+* いつでも休憩で退出可能です
+
+  * いちいち静脈認証するので面倒ではあります
+  * 眼鏡もいちいちチェックされます
+
+試験当日 --- 試験後
+-------------------
+
+* 時間が来ると自動終了します
+
+  * データの submit は試験官が行います
+
+* submit して即座に結果がわかります
+
+  * クールダウンする間もなく、落ちた時は悲しいものがあります
+
+試験当日 --- 試験結果
+---------------------
+
+* 不合格は A4 二枚、合格は一枚、だから、内容見なくてもわかる
+
+  * 一回落ちたから知ってるんです (w
+
+  
+合格後の手続き --- 必要なもの
+=============================
+
+1. CISSP フォルダー（すでに取得しているということ）の推薦
+2. 職場に所属している（いた）ことの証明
+3. 職務経歴書
+4. 初年度会費
+
+合格後の手続き --- CISSP フォルダーの推薦人を探す
+-------------------------------------------------
+
+* フルネームと (ISC)² の会員番号が必要
+* 推薦文まで用意しろとはいわれません
+
+  * ただし、推薦人は提出された職務経歴書についてコメントを求められます
+* 知り合いいなければ (ISC)² に相談するか、私でもいいです
+
+  * 2020/12 に OSC の発表が縁で一名推薦しました
+
+合格後の手続き ---会社の所属証明書
+----------------------------------
+
+* 形式はなんでもいいけど :red:`英語` で
+
+  * 推薦人がみるので、日本語でもいいのかもしれない?
+  * わたしはこの通りに書いてくれ ↓ と、前職社長にお願いしました 
+
+.. raw:: html
+           
+   <iframe src="https://dent-sweden.com/study-abroad/certificate-of-employment" height="450px" width="100%"></iframe>
+
+   
+合格後の手続き --- 職務経歴書
+-----------------------------
+
+Candidates must have a minimum of five years cumulative paid work experience in two or more of the eight domains of the CISSP CBK. 
+
+* A4 二枚程度で (ISC)² が要求する 5 年、2 ドメイン以上の関連を書く
+* 経営者層（C-level）とか、情シス、ベンダーにセキュリティ対策とかインシデントにおいてどう :red:`自分がつないだのか` を詳しく書く
+* :red:`自分がつないだのか` が先方によく理解されないと職務経歴書の書き直しとなります
+
+  * 推薦人がうまく説明できるようにネゴっておきましょう
+
+合格後の手続き --- 年会費をクレジットカードでお支払い
+-----------------------------------------------------
+
+* 職向経歴があると (ISC)² に認められれば、年会費の支払いをもって完了です
+* 13,914 円（125 USD）/year
+* 支払い後即座に `ISC² マイページ <https://www.isc2.org/Dashboard/Profile>`_ より CISSP ホルダー証明書が PDF で発行可能です
+
+
+| Congratulations! Based on your examination results, application review and acceptance of your endorsement, the (ISC)² Board of Directors has awarded you the CISSP certification.
+| :red:`人月なみなさん` 転職です (w
+
+
+紙の証明書がきます
+------------------
+
+* 二カ月近くかかります
+* オンラインであれば PDF 証明書を年会費支払と同時に発行できます
+
+.. figure:: images/cissp.jpg
+   :scale: 60
+   :align: center  
+
+ご清聴ありがとうございました
+============================
+
+| ご質問ありましたら yamachan@matomo.jp まで
+| このドキュメントは `sphinx-revealjs <https://pypi.org/project/sphinx-revealjs/>`_ で作成しています
